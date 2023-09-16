@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #111;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 10px 10px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #292929;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #131212;
+    color: white;
+    border: 1px solid rgb(203, 203, 203);
+  }
+  
+  .dark-mode {
+    background-color: #111;
+    color: #fff;
+  }
+  
+  

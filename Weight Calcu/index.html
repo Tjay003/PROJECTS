@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weight Converter</title>
+    <style>
+      body {
+        background-color: #333;
+        color: #fff;
+        margin-top: 100px;
+      }
+
+      .container {
+        width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #555;
+        border-radius: 5px;
+        background-color: #222;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .form-group input[type="number"] {
+        width: 100%;
+        padding: 5px;
+        background-color: #444;
+        color: #fff;
+        border: none;
+      }
+
+      .btn {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .result {
+        margin-top: 20px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weight Converter</h1>
+      <div class="form-group">
+        <label for="pound">Pound</label>
+        <input type="number" id="pound" min="0" step="any" />
+      </div>
+      <button class="btn" onclick="convertWeight()">Convert</button>
+      <div class="result" id="result"></div>
+    </div>
+    <script>
+      function convertWeight() {
+        var pound = document.getElementById("pound").value;
+
+        var kg = pound * 0.453592;
+
+        document.getElementById("result").innerHTML =
+          "Your weight in kg is: " + kg.toFixed(2);
+      }
+    </script>
+  </body>
+</html>
